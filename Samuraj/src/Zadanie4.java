@@ -19,125 +19,125 @@ tzn. wydrukuj tyle razy, jaką liczbę podał użytkownik. Jeśli użytkownik wp
      */
 
     public static void main(String[] args) {
-        1.
-
-        int liczba;
-        Scanner scaner = new Scanner(System.in);
-        liczba = scaner.nextInt();
-        int limit = liczba/2;
-
-        if(liczba == 0){
-            System.out.println("Nie jest liczbą pierwszą");
-        }
-        else if (liczba == 1){
-            System.out.println("Nie jest liczbą pierwszą");
-        }
-        else if (liczba == 2||liczba == 3) {
-            System.out.println("Jest liczbą pierwszą");
-        }
-        else {
-            for(int i=1; i < limit; i++){
-                if(liczba%i==0){
-                    System.out.println("Nie Jest liczbą pierwszą");
-                }
-                else
-                    System.out.println("Jest liczbą pierwszą");
-                break;
-            }
-
-        }
-
-
-       2.
-         int l1,l2,l3;
-         int liczba1 = 0;
-         int liczba2 = 0;
-         int liczba3 = 0;
-
-
-         Scanner scanner = new Scanner(System.in);
-         l1 = scanner.nextInt();
-         l2 = scanner.nextInt();
-         l3 = scanner.nextInt();
-
-         if(l1>l2 && l1>l3){
-             liczba1=l1;
-             if(l2>l3) {
-                 liczba2 = l2;
-                 liczba3 = l3;
-             }
-             if(l3>l2) {
-                 liczba2 = l3;
-                 liczba3 = l2;
-             }
-         }
-
-        if(l2>l1 && l2>l3){
-            liczba1=l2;
-            if(l1>l3) {
-                liczba2 = l1;
-                liczba3 = l3;
-            }
-            if(l3>l1) {
-                liczba2 = l3;
-                liczba3 = l1;
-            }
-        }
-
-        if(l3>l2 && l3>l1){
-            liczba1=l3;
-            if(l2>l3) {
-                liczba2 = l2;
-                liczba3 = l1;
-            }
-            if(l3>l2) {
-                liczba2 = l3;
-                liczba3 = l1;
-            }
-        }
-
-         System.out.println(liczba3 + " " + liczba2 + " " + liczba1);
-
-
-        3.
-
-        int styl;
-        int efekty;
-        int rezultat;
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Wprowadź punkty za styl");
-        styl = scanner.nextInt();
-        System.out.println("Wprowadź punkty za efekty");
-        efekty = scanner.nextInt();
-        System.out.println("Wprowadź punkty za rezulat");
-        rezultat = scanner.nextInt();
-
-        double x = styl*0.2 + efekty*0.3 + rezultat*0.5;
-        double suma = x;
-        System.out.println("Suma twoich punktów wynosi " + suma);
-
-        4.
-
-        String name;
-        String surname;
-        int number;
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Give me the name");
-        name = scanner.next();
-        System.out.println("Give me the surname");
-        surname = scanner.next();
-        System.out.println("Give me the number");
-        number = scanner.nextInt();
-
-        System.out.println("---------------");
-        System.out.println("NAME:     " + name);
-        System.out.println("SURNAME:  " + surname);
-        System.out.println("NUMBER:   " + number);
-        System.out.println("---------------");
-
-        5.
+//        1.
+//
+//        int liczba;
+//        Scanner scaner = new Scanner(System.in);
+//        liczba = scaner.nextInt();
+//        int limit = liczba/2;
+//
+//        if(liczba == 0){
+//            System.out.println("Nie jest liczbą pierwszą");
+//        }
+//        else if (liczba == 1){
+//            System.out.println("Nie jest liczbą pierwszą");
+//        }
+//        else if (liczba == 2||liczba == 3) {
+//            System.out.println("Jest liczbą pierwszą");
+//        }
+//        else {
+//            for(int i=1; i < limit; i++){
+//                if(liczba%i==0){
+//                    System.out.println("Nie Jest liczbą pierwszą");
+//                }
+//                else
+//                    System.out.println("Jest liczbą pierwszą");
+//                break;
+//            }
+//
+//           }
+//
+//
+//       2.
+//         int l1,l2,l3;
+//         int liczba1 = 0;
+//         int liczba2 = 0;
+//         int liczba3 = 0;
+//
+//
+//         Scanner scanner = new Scanner(System.in);
+//         l1 = scanner.nextInt();
+//         l2 = scanner.nextInt();
+//         l3 = scanner.nextInt();
+//
+//         if(l1>l2 && l1>l3){
+//             liczba1=l1;
+//             if(l2>l3) {
+//                 liczba2 = l2;
+//                 liczba3 = l3;
+//             }
+//             if(l3>l2) {
+//                 liczba2 = l3;
+//                 liczba3 = l2;
+//             }
+//         }
+//
+//        if(l2>l1 && l2>l3){
+//            liczba1=l2;
+//            if(l1>l3) {
+//                liczba2 = l1;
+//                liczba3 = l3;
+//            }
+//            if(l3>l1) {
+//                liczba2 = l3;
+//                liczba3 = l1;
+//            }
+//        }
+//
+//        if(l3>l2 && l3>l1){
+//            liczba1=l3;
+//            if(l2>l3) {
+//                liczba2 = l2;
+//                liczba3 = l1;
+//            }
+//            if(l3>l2) {
+//                liczba2 = l3;
+//                liczba3 = l1;
+//            }
+//        }
+//
+//         System.out.println(liczba3 + " " + liczba2 + " " + liczba1);
+//
+//
+//        3.
+//
+//        int styl;
+//        int efekty;
+//        int rezultat;
+//
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Wprowadź punkty za styl");
+//        styl = scanner.nextInt();
+//        System.out.println("Wprowadź punkty za efekty");
+//        efekty = scanner.nextInt();
+//        System.out.println("Wprowadź punkty za rezulat");
+//        rezultat = scanner.nextInt();
+//
+//        double x = styl*0.2 + efekty*0.3 + rezultat*0.5;
+//        double suma = x;
+//        System.out.println("Suma twoich punktów wynosi " + suma);
+//
+//        4.
+//
+//        String name;
+//        String surname;
+//        int number;
+//
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Give me the name");
+//        name = scanner.next();
+//        System.out.println("Give me the surname");
+//        surname = scanner.next();
+//        System.out.println("Give me the number");
+//        number = scanner.nextInt();
+//
+//        System.out.println("---------------");
+//        System.out.println("NAME:     " + name);
+//        System.out.println("SURNAME:  " + surname);
+//        System.out.println("NUMBER:   " + number);
+//        System.out.println("---------------");
+//
+//        5.
 
         String text;
         int number;
