@@ -1,3 +1,5 @@
+package Podstawy123;
+
 public class Podstawy {
     public static void main(String[] args) {
         int wynik, wynik2, wynik3;

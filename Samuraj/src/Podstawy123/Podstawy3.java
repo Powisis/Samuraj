@@ -1,3 +1,5 @@
+package Podstawy123;
+
 import jdk.swing.interop.SwingInterOpUtils;
 
 import java.util.Scanner;

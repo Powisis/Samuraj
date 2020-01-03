@@ -2,8 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af4058aa-7af3-4544-aadc-b5cddc18ca05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Podstawy4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zadanie4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zadanie4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LightBulb/LightBulb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Nauka/2/2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Nauka/Generator losowych liczb/Generator losowych liczb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Nauka/Nauka.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Przeglądy/Przeglądy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Podstawy5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Tv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Drugie/ATM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Drugie/Software.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Pierwsze/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Pierwsze/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Pierwsze/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Zadanie5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Uczelnia/Uczelnia.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Zaliczenie/Zaliczenie.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Podstawy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Podstawy2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Podstawy3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Zadanie4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Podstawy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podstawy123/Podstawy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Podstawy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podstawy123/Podstawy2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Podstawy3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podstawy123/Podstawy3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Podstawy4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Czwarte/Podstawy4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zadanie4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Czwarte/Zadanie4.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +50,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1Vhlxm7OXDY0A3Hy1iQzsMwfbG5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../LightBulb/src/LightBulbs.java" />
   </component>
   <component name="RunDashboard">
@@ -38,36 +69,55 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Zadanie4">
-    <configuration name="LightBulbs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LightBulbs" />
+  <component name="RunManager" selected="Application.ATM2">
+    <configuration name="ATM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Piate.Zadanko.Drugie.ATM" />
+      <module name="Samuraj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Piate.Zadanko.Drugie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Podstawy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Podstawy" />
+    <configuration name="ATM2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Piate.Zadanko.Drugie.ATM2" />
+      <module name="Samuraj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Piate.Zadanko.Drugie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Home" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Piate.Home" />
       <module name="Samuraj" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Podstawy2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Podstawy2" />
+    <configuration name="Home" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Piate.Zadanko.Pierwsze.Home" />
       <module name="Samuraj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Piate.Zadanko.Pierwsze.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Podstawy3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Podstawy3" />
-      <module name="Samuraj" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Zadanie4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Zadanie4" />
+    <configuration name="Podstawy5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Piate.Podstawy5" />
       <module name="Samuraj" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Zadanie4" />
-        <item itemvalue="Application.Podstawy3" />
-        <item itemvalue="Application.LightBulbs" />
-        <item itemvalue="Application.Podstawy2" />
-        <item itemvalue="Application.Podstawy" />
+        <item itemvalue="Application.ATM2" />
+        <item itemvalue="Application.ATM" />
+        <item itemvalue="Application.Home (1)" />
+        <item itemvalue="Application.Home" />
+        <item itemvalue="Application.Podstawy5" />
       </list>
     </recent_temporary>
   </component>
