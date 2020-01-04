@@ -3,7 +3,7 @@ package Piate.Zadanko.Drugie;
 import java.util.Scanner;
 
 public class ATM {
-
+//////////////////////////////
     public static String card;
     public static Software cardDB = new Software();
 
