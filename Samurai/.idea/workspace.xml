@@ -1,37 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af4058aa-7af3-4544-aadc-b5cddc18ca05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../LightBulb/LightBulb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Nauka/2/2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Nauka/Generator losowych liczb/Generator losowych liczb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Nauka/Nauka.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Przeglądy/Przeglądy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Podstawy5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Tv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Drugie/ATM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Drugie/Software.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Pierwsze/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Pierwsze/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Pierwsze/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piate/Zadanko/Zadanie5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Uczelnia/Uczelnia.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Zaliczenie/Zaliczenie.iml" afterDir="false" />
+    <list default="true" id="af4058aa-7af3-4544-aadc-b5cddc18ca05" name="Default Changelist" comment="comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Podstawy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Podstawy2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Podstawy3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Zadanie4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podstawy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podstawy123/Podstawy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podstawy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podstawy123/Podstawy2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podstawy3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podstawy123/Podstawy3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podstawy4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Czwarte/Podstawy4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zadanie4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Czwarte/Zadanie4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/META-INF/Samuraj.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/ATM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/ATM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/ATM2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/Human.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/Software.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/Software.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/Software2.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ATM2">
+  <component name="RunManager" selected="Application.ATM">
     <configuration name="ATM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Piate.Zadanko.Drugie.ATM" />
       <module name="Samuraj" />
@@ -125,9 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ATM2" />
         <item itemvalue="Application.ATM" />
-        <item itemvalue="Application.Home (1)" />
+        <item itemvalue="Application.ATM2" />
         <item itemvalue="Application.Home" />
         <item itemvalue="Application.Podstawy5" />
       </list>
@@ -144,6 +120,14 @@
       <option name="presentableId" value="Default" />
       <updated>1577713456548</updated>
     </task>
+    <task id="LOCAL-00001" summary="comment">
+      <created>1578096639542</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578096639542</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,5 +142,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment" />
   </component>
 </project>
