@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="af4058aa-7af3-4544-aadc-b5cddc18ca05" name="Default Changelist" comment="comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/META-INF/Samuraj.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/ATM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/ATM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/ATM2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/Human.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/Software.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/Software.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Samuraj/Piate/Zadanko/Drugie/Software2.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

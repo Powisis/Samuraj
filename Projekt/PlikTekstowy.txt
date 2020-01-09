@@ -1,0 +1,1 @@
+{"userID":3,"drawID":0,"day":"FRIDAY","Data":{"year":2020,"month":1,"day":10}}
