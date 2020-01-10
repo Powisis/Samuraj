@@ -6,15 +6,14 @@ import java.time.LocalDate;
 public class Losowanie {
     public int userID;
     public int drawID;
+    public LocalDate date = LocalDate.now();
     public DayOfWeek day;
-
-    LocalDate Data = LocalDate.now();
 
 
     public void Losuj() {
         userID = Draw.draw();
         drawID = Draw.objectList.size();
-        day = Data.getDayOfWeek();
+        day = date.getDayOfWeek();
     }
 
     public String pobierzJSON(){
@@ -29,5 +28,9 @@ public class Losowanie {
 
     public DayOfWeek getDay() {
         return day;
+    }
+
+    public LocalDate getDate(){
+        return date;
     }
 }

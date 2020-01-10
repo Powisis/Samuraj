@@ -12,14 +12,18 @@ public class Draw {
     static List<String> givenList = Arrays.asList("Marek", "Bartosz", "Robert", "Kacper");
     public static List<Losowanie> objectList = new ArrayList<Losowanie>();
     List<Losowanie> readFromFile = new ArrayList<Losowanie>();
-    static LocalDate myObj = LocalDate.now();
+    public static LocalDate myObj = LocalDate.now();
 
     private static void values(){
-        Losowanie first = new Losowanie();
-        first.drawID = 0;
-        first.userID = 0;
-        first.day = myObj.getDayOfWeek();
-        objectList.add(first);
+        LocalDate longTimeAgo = myObj.minusDays(99);
+        for (int i=0; i<100; i++){
+            Losowanie los = new Losowanie();
+            los.Losuj();
+            los.date = longTimeAgo;
+            los.day = longTimeAgo.getDayOfWeek();
+            objectList.add(los);
+            longTimeAgo = longTimeAgo.plusDays(1);
+        }
     }
 
     public static int draw() {
@@ -71,32 +75,17 @@ public class Draw {
 
         System.out.println("");
         System.out.println("===========================================================");
-        System.out.println("Wybeirz co chcesz zrobic");
+        System.out.println("Wybeirz co chcesz zrobic:");
         System.out.println("1. Wylosuj kogoś");
         System.out.println("2. Zapisz do pliku");
-        System.out.println("3. Kto dzisiaj został wylosowany(odczyt z pliku)");
-        System.out.println("4. Jaki dziś dzień");
-        System.out.println("5. Kto został najczęsciej wylosowany w ...");
+        System.out.println("3. Kto dzisiaj został wylosowany (odczyt z pliku)");
+        System.out.println("4. Wylosuj ostatnie 100 dni");
+        System.out.println("5. Jaki dziś dzień");
+        System.out.println("6. Kto został najczęsciej wylosowany w ...");
         System.out.println("9. Exit");
         System.out.println("===========================================================");
         System.out.println("");
 
-//        values();
-
-//        Losowanie los1 = new Losowanie();
-//        los1.Losuj();
-//        objectList.add(los1);
-//        System.out.println(los1.name());
-
-
-        /* TO CO ZAPISUJE SIĘ DO PLIKU
-        System.out.println(los.name());
-        System.out.println(los.pobierzJSON());
-
-
-        System.out.println(los1.name());
-        System.out.println(los1.pobierzJSON());
-*/
 
 
         Scanner scanner = new Scanner(System.in);
@@ -107,7 +96,7 @@ public class Draw {
             switch (wybór) {
                 case 1:
                     drawing();
-                    System.out.println(" Wylosowano: "+ objectList.get(0).name());
+                    System.out.println(" Wylosowano: "+ objectList.get(objectList.size()-1).name());
                     break;
                 case 2:
                     write();
@@ -115,18 +104,22 @@ public class Draw {
                     break;
                 case 3:
                     read();
-                    System.out.println("Dzisiaj został wylosowany: "+ objectList.get(0).name());
+                    System.out.println("Dzisiaj został wylosowany: "+ objectList.get(objectList.size()-1).name());
                     break;
                 case 4:
+                    values();
+                    System.out.println("Pomyslnie przeprowadzono loswanie 100 ostatnich dni");
+                    break;
+                case 5:
                     System.out.println("Dzisiaj mamy: " + objectList.get(0).getDay());
                     break;
                 case 9:
                     System.out.println("Do widzenia");
+                    System.exit(0);
                     break;
                 default:
-                    break;
+                    System.exit(0);
 
-//                break pętla;
             }
         }
 
