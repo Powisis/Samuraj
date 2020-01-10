@@ -66,7 +66,11 @@ public class Draw {
 //        catch (IndexOutOfBoundsException error2){
 //            System.err.println("Przekroczenie zakresu");
 //        }
-        return objectList.get(objectList.size()-1).name();
+        if(!objectList.isEmpty()) {
+            return objectList.get(objectList.size()-1).name();
+        }
+        else
+             return "\n\r Przekroczenie zakresu, lista jest pusta";
     }
 
 
