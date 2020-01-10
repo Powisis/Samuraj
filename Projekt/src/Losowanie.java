@@ -33,4 +33,6 @@ public class Losowanie {
     public LocalDate getDate(){
         return date;
     }
-}
+
+
+    }

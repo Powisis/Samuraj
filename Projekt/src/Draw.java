@@ -1,8 +1,4 @@
-import com.google.gson.Gson;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -15,15 +11,15 @@ public class Draw {
     public static LocalDate myObj = LocalDate.now();
 
     private static void values(){
-        LocalDate longTimeAgo = myObj.minusDays(99);
-        for (int i=0; i<100; i++){
-            Losowanie los = new Losowanie();
-            los.Losuj();
-            los.date = longTimeAgo;
-            los.day = longTimeAgo.getDayOfWeek();
-            objectList.add(los);
-            longTimeAgo = longTimeAgo.plusDays(1);
-        }
+            LocalDate longTimeAgo = myObj.minusDays(99);
+            for (int i = 0; i < 100; i++) {
+                Losowanie los = new Losowanie();
+                los.Losuj();
+                los.date = longTimeAgo;
+                los.day = longTimeAgo.getDayOfWeek();
+                objectList.add(los);
+                longTimeAgo = longTimeAgo.plusDays(1);
+            }
     }
 
     public static int draw() {
@@ -46,26 +42,33 @@ public class Draw {
         zapis.close();
     }
 
-    public static void read() throws IOException {
-        FileReader fileReader = new FileReader("PlikTekstowy.txt");
-        String text = "";
-        while (true){
-            int znak = fileReader.read();
-            if(znak > 0)
-                text+= (char) znak;
-            else
-                break;;
+    public static void read() {
+        try {
+            FileReader fileReader = new FileReader("PlikTekstowy.txt");
+            BufferedReader bfReader = new BufferedReader(fileReader);
+            bfReader.lines().forEach(System.out::println);
+            bfReader.close();
         }
-        fileReader.close();
+        catch (FileNotFoundException error) {
+            System.err.println("Plik nie istnieje");
+            }
+            catch (IOException e) {
+            System.err.println("Mamy obowiazek obsługi IOException");
+            }
 
-        List<String> linie = Arrays.asList(text.split("\r\n"));
-        System.out.println(text);
-        objectList = new ArrayList<Losowanie>();
-        Gson gson = new Gson();
-        for(String s: linie){
-            objectList.add(gson.fromJson(s, Losowanie.class));
-        }
+
     }
+
+    public static String NAME(){
+//        try{
+//            objectList.get(objectList.size()-1).name();
+//        }
+//        catch (IndexOutOfBoundsException error2){
+//            System.err.println("Przekroczenie zakresu");
+//        }
+        return objectList.get(objectList.size()-1).name();
+    }
+
 
 
 
@@ -96,7 +99,7 @@ public class Draw {
             switch (wybór) {
                 case 1:
                     drawing();
-                    System.out.println(" Wylosowano: "+ objectList.get(objectList.size()-1).name());
+                    System.out.println(" Wylosowano: " + NAME());
                     break;
                 case 2:
                     write();
@@ -104,7 +107,7 @@ public class Draw {
                     break;
                 case 3:
                     read();
-                    System.out.println("Dzisiaj został wylosowany: "+ objectList.get(objectList.size()-1).name());
+                    System.out.println("Dzisiaj został wylosowany: " + NAME());
                     break;
                 case 4:
                     values();
@@ -112,6 +115,11 @@ public class Draw {
                     break;
                 case 5:
                     System.out.println("Dzisiaj mamy: " + objectList.get(0).getDay());
+                    break;
+                case 6:
+                    System.out.println("Najczęściej wylosowany w ...");
+                    String dzień = scanner.next();
+                    Statistics.statystykaNaJedenDzień(dzień);
                     break;
                 case 9:
                     System.out.println("Do widzenia");
