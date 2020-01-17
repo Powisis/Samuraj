@@ -34,5 +34,13 @@ public class Losowanie {
         return date;
     }
 
-
+    public static String nameList(){
+        if(!Draw.objectList.isEmpty()) {
+            return Draw.objectList.get(Draw.objectList.size()-1).name();
+        }
+        else
+            return "\n\r Przekroczenie zakresu, lista jest pusta";
     }
+
+
+}

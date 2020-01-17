@@ -7,7 +7,6 @@ public class Draw {
     static Random r = new Random();
     static List<String> givenList = Arrays.asList("Marek", "Bartosz", "Robert", "Kacper");
     public static List<Losowanie> objectList = new ArrayList<Losowanie>();
-    List<Losowanie> readFromFile = new ArrayList<Losowanie>();
     public static LocalDate myObj = LocalDate.now();
 
     private static void values(){
@@ -37,7 +36,7 @@ public class Draw {
     public static void write() throws FileNotFoundException {
         PrintWriter zapis = new PrintWriter("PlikTekstowy.txt");
         for (Losowanie x: objectList){
-            zapis.println(x.pobierzJSON());
+            zapis.println(x.pobierzJSON() + ";");
         }
         zapis.close();
     }
@@ -59,27 +58,7 @@ public class Draw {
 
     }
 
-    public static String NAME(){
-//        try{
-//            objectList.get(objectList.size()-1).name();
-//        }
-//        catch (IndexOutOfBoundsException error2){
-//            System.err.println("Przekroczenie zakresu");
-//        }
-        if(!objectList.isEmpty()) {
-            return objectList.get(objectList.size()-1).name();
-        }
-        else
-             return "\n\r Przekroczenie zakresu, lista jest pusta";
-    }
-
-
-
-
-
-
-    public static void main(String[] args) throws IOException {
-
+    public static void menu() throws FileNotFoundException {
         System.out.println("");
         System.out.println("===========================================================");
         System.out.println("Wybeirz co chcesz zrobic:");
@@ -89,6 +68,7 @@ public class Draw {
         System.out.println("4. Wylosuj ostatnie 100 dni");
         System.out.println("5. Jaki dziś dzień");
         System.out.println("6. Kto został najczęsciej wylosowany w ...");
+        System.out.println("7. Ile raz został wylosowany ...");
         System.out.println("9. Exit");
         System.out.println("===========================================================");
         System.out.println("");
@@ -103,7 +83,7 @@ public class Draw {
             switch (wybór) {
                 case 1:
                     drawing();
-                    System.out.println(" Wylosowano: " + NAME());
+                    System.out.println(" Wylosowano: " + Losowanie.nameList());
                     break;
                 case 2:
                     write();
@@ -111,19 +91,23 @@ public class Draw {
                     break;
                 case 3:
                     read();
-                    System.out.println("Dzisiaj został wylosowany: " + NAME());
+                    System.out.println("Dzisiaj został wylosowany: " + Losowanie.nameList());
                     break;
                 case 4:
                     values();
                     System.out.println("Pomyslnie przeprowadzono loswanie 100 ostatnich dni");
                     break;
                 case 5:
-                    System.out.println("Dzisiaj mamy: " + objectList.get(0).getDay());
+                    System.out.println("Dzisiaj mamy: " + objectList.get(objectList.size()-1).getDay());
                     break;
                 case 6:
-                    System.out.println("Najczęściej wylosowany w ...");
+                    System.out.println("Najczęściej wylosowany w ... (podaj dzień)");
                     String dzień = scanner.next();
                     Statistics.statystykaNaJedenDzień(dzień);
+                    break;
+                case 7:
+                    System.out.println("Ile razy kto był wylosowany w ciagu ostatnich 100 dni.");
+                    Statistics.howManyTimes();
                     break;
                 case 9:
                     System.out.println("Do widzenia");
@@ -134,8 +118,5 @@ public class Draw {
 
             }
         }
-
-
-
     }
 }
