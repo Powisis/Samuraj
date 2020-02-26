@@ -13,71 +13,86 @@ public class Alg2 {
 
         System.out.println("Podaj liczbe iteracji: ");
         int M = scanner.nextInt();
-        algorytm2(M);
+
+        double[] arr = algorytm2(M);
+        System.out.println("fmax: " + arr[0]);
+        for (int i = 1; i < arr.length; i++)
+            System.out.println("x" + i + ": " + arr[i]);
     }
 
-    private static void algorytm2(int M) throws FileNotFoundException {
-        double x1, x2 = 0;
-        double Xk = 0, w, Xsr = 0;
+    private static double[] algorytm2(int M) throws FileNotFoundException {
+        double w;
         double o = rand();
-        double Fmax = 0;
-        double FXsr = 0;
-        double tempXk = 0;
+        double[] Xmax = NextRandomArr(-2, 2, 2);
+        double Fmax = function(Xmax);
+
         System.out.println("Podaj T:");
         double T = scanner.nextDouble();
         System.out.println("Podaj y:");
         double y = scanner.nextDouble();
+
         PrintWriter zapis = new PrintWriter("2.1.txt");
         PrintWriter zapisC = new PrintWriter("2.2.txt");
-        for (int i = 0; i < M; i++) {
-            double a =  losuj();
-            double b =  losuj();
-            double tymczasowa = metoda(a,b);
-            if(i == 1){
-                Xk = tymczasowa;
-                w = losuj();
-                if (w == 1){
-                    Xsr = Xk + y*o;
-                }
-                else
-                    Xsr = Xk - y*o;
+        zapis.flush();
+        zapisC.flush();
+        System.out.println(M);
+        for (int k = 0; k < M; k++) {
+
+            double[] Xk = new double[Xmax.length];
+            double[] Xsr = new double[Xmax.length];
+            if(k == 1)
+                Xk = Xmax;
+
+            w = rand();
+            if (w == 1.00){
+                for (int i = 0; i < Xsr.length; i++)
+                    Xsr[i] = Xk[i] + y*o;
             }
-            FXsr = metoda2(Xsr);
-            tempXk = metoda2(Xk);
-            if(FXsr > Fmax){
-                Fmax = FXsr;
-                x2 =  Xsr;
+            else
+                for (int i = 0; i < Xsr.length; i++)
+                    Xsr[i] = Xk[i] + y*o;
+
+
+            if(function(Xsr) > Fmax){
+                Fmax = function(Xsr);
+                Xmax =  Xsr;
                 Xk = Xsr;
             }
             else {
                 double Z = rand();
-                if (Z < Math.pow(Math.E, -(Fmax - tempXk)/T)){
-                    Fmax = FXsr;
-                    x2 =  Xsr;
+                if (Z < Math.pow(Math.E, -(function(Xsr) - function(Xk))/T)){
+                    Fmax = function(Xsr);
+                    Xmax =  Xsr;
                     Xk = Xsr;
                 }
             }
-            zapis.println(Fmax);
-            zapisC.println(tymczasowa);
+            zapis.println(function(Xsr));
+            zapisC.println(Xsr[0]);
         }
         zapis.close();
         zapisC.close();
-        System.out.println(Fmax);
-//        System.out.println(x2);
+
+
+        double[] arr = new double[1 + Xmax.length];
+        for (int i = 1; i < arr.length; i++)
+            arr[i] = Xmax[i - 1];
+        arr[0] = Fmax;
+
+        return arr;
     }
 
 
-
-
-
-    private static double metoda(double a, double b) {
-        double wynik = -Math.pow(a, 2) - Math.pow(b, 2) + 2;
+    private static double function(double[] a) {
+        double wynik = -Math.pow(a[0], 2) - Math.pow(a[1], 2) + 2;
         return wynik;
     }
 
-    private static double metoda2(double a) {
-        double wynik = -Math.pow(a, 2) - Math.pow(a, 2) + 2;
-        return wynik;
+    private static double[] NextRandomArr(double min, double max, int size) {
+        double[] arr = new double[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = losuj();
+        }
+        return arr;
     }
 
     private static double losuj(){
