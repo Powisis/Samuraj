@@ -1,0 +1,6 @@
+1. z zakresu liczb które mamy generować robimy bezwzględna
+2. bezwględna zwraca max liczbe, logarytmem zwracam na ilu bitach ją zapisze
+3. to na ilu ją zapisze podstawiam pod losowanie chromosomu plus jeden bo bit znaku 
+4. chromosom plus bit znaku dziesiętnie mnoże razy 10 do potęgi minus wykładnik 
+5. potem wpisuje wykładnik dziesiętnie, wykładnik do binarki 
+6. potem tworze tablice ze znakiem, z liczbą i wykładnikiem i zwracam na ilu pozycjach ją zapiszę

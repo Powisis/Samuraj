@@ -1,9 +1,9 @@
 import com.google.gson.Gson;
-
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 public class Losowanie {
+
     public int userID;
     public int drawID;
     public LocalDate date = LocalDate.now();
@@ -28,10 +28,6 @@ public class Losowanie {
 
     public DayOfWeek getDay() {
         return day;
-    }
-
-    public LocalDate getDate(){
-        return date;
     }
 
     public static String nameList(){

@@ -1,6 +1,6 @@
 package com.company;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
 import java.util.Scanner;
@@ -9,7 +9,7 @@ public class Alg2 {
 
     static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
 
         System.out.println("Podaj liczbe iteracji: ");
         int M = scanner.nextInt();
@@ -20,7 +20,7 @@ public class Alg2 {
             System.out.println("x" + i + ": " + arr[i]);
     }
 
-    private static double[] algorytm2(int M) throws FileNotFoundException {
+    private static double[] algorytm2(int M) throws IOException {
         double w;
         double o = rand();
         double[] Xmax = NextRandomArr(-2, 2, 2);
@@ -33,24 +33,24 @@ public class Alg2 {
 
         PrintWriter zapis = new PrintWriter("2.1.txt");
         PrintWriter zapisC = new PrintWriter("2.2.txt");
-        zapis.flush();
-        zapisC.flush();
-        System.out.println(M);
-        for (int k = 0; k < M; k++) {
 
+        System.out.println(M);
+
+        for (int k = 0; k < M; k++) {
             double[] Xk = new double[Xmax.length];
             double[] Xsr = new double[Xmax.length];
+
             if(k == 1)
                 Xk = Xmax;
 
             w = rand();
             if (w == 1.00){
                 for (int i = 0; i < Xsr.length; i++)
-                    Xsr[i] = Xk[i] + y*o;
+                    Xsr[i] = Xk[i] + y*rand();
             }
             else
                 for (int i = 0; i < Xsr.length; i++)
-                    Xsr[i] = Xk[i] + y*o;
+                    Xsr[i] = Xk[i] + y*rand();
 
 
             if(function(Xsr) > Fmax){
@@ -60,14 +60,17 @@ public class Alg2 {
             }
             else {
                 double Z = rand();
-                if (Z < Math.pow(Math.E, -(function(Xsr) - function(Xk))/T)){
+                if (Z < Math.E * (- (function(Xsr) - function(Xk)) / T)) {
+
+//                    if (Z < Math.pow(Math.E, -(function(Xsr) - function(Xk))/T)){
                     Fmax = function(Xsr);
                     Xmax =  Xsr;
                     Xk = Xsr;
                 }
             }
-            zapis.println(function(Xsr));
+            zapis.println(Fmax);
             zapisC.println(Xsr[0]);
+
         }
         zapis.close();
         zapisC.close();

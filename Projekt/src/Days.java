@@ -32,6 +32,7 @@ public class Days extends Draw{
     }
 
     static void date(){
+
         System.out.println("Today is " + getDayOfWeek().name());
     }
 
